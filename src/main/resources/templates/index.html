@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/header :: common-header">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div th:replace="common/header :: navbar"></div>
+<div class="container">
+    <div class="row">
+        <div class="img-wrap">
+            <img src="/image/study.png" class="img-responsive">
+            <h1>
+                131 студент был отчислен. больше всего «выкинули» из БНТУ: 55 человек!
+                23 человека стали подозреваемыми по уголовным делам.​</h1>
+        </div>
+    </div>
+    <div id="yak1">
+        <div class="row">
+            <div class="col-xs-9">
+                <h2>
+                    Миссией проекта "АдРазам" является создание пространства,
+                    в котором студенты никогда не были разделены на два лагеря.
+                    Это место, где они могут обмениваться знаниями и чувствовать свою общность, д
+                    аже если физически лишены такой возможности.</h2>
+            </div>
+            <div class="col-xs-2">
+                <img src="image/koluchka.png">
+            </div>
+        </div>
+    </div>
+    <div id="yak2">
+        <div class="row">
+            <h2 class="platforma">Как работает платформа</h2>
+        </div>
+        <div style="padding-top: 120px" class="row">
+            <div class="col-xs-6">
+                <img class="img-responsive" src="image/work.png">
+            </div>
+            <div style="padding-top: 140px ;text-align: left" class="col-xs-6">
+                <h3><strong>Преподавателю</strong></h3>
+                <h4>1. довавляйся к команде преподователей</h4>
+                <h4>2. добавь материалы, которыми владеешь</h4>
+                <h4>3. делись знаниями!</h4>
+                <h3 style="padding-top: 50px"><strong>Жаждущему новых знаний:</strong></h3>
+                <h4>1. присоединись к нашему проекту</h4>
+                <h4>2. исследуй доступные возможности</h4>
+                <h4>3. заполни какие дисциплины/направления тебя интересуют</h4>
+                <h4>4. выбери курсы по душе</h4>
+                <h4>5. абсорбируй знания! и мониторь успехи!</h4>
+            </div>
+        </div>
+    </div>
+    <div id="yak3">
+        <div class="picture-container">
+            <a href="index.html"> <img style="width: 95px" class="logo" src="image/shtuka.png"/></a>
+            <span><strong>Кому Вы можете помочь?</strong></span>
+        </div>
+        <!--Карточки-->
+        <div class="row">
+            <div class="card-deck">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card text-center">
+                        <img class="card-img-top img-thumbnail profile" th:src="@{image/vinokurov.jpg}" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Артем Винокуров</strong></h4>
+                            <p class="card-text">Бывший студент БГУИР</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Осужден на 3 года химии за призыв к
+                                общенациональной забастовке</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card text-center">
+                        <img class="card-img-top img-thumbnail profile" th:src="@{image/kot.jpg}" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Кот-котопес</strong></h4>
+                            <p class="card-text">Бывший студент помойки</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Живет на улице без денег и еды</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-deck">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card text-center">
+                        <img class="card-img-top img-thumbnail profile" th:src="@{image/kot.jpg}" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Кот-котопес</strong></h4>
+                            <p class="card-text">Бывший студент помойки</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Живет на улице без денег и еды</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card text-center">
+                        <img class="card-img-top img-thumbnail profile" th:src="@{image/vinokurov.jpg}" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Артем Винокуров</strong></h4>
+                            <p class="card-text">Бывший студент БГУИР</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Осужден на 3 года химии за призыв к
+                                общенациональной забастовке</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="common/popup :: popup"></div>
+<div th:replace="common/footer :: footer"></div>
+</body>
+</html>
